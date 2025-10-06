@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import vue_de_test
+from .views import index
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('test/', vue_de_test), 
+    path('', index),
+    path('admin/', admin.site.urls), 
 ]
