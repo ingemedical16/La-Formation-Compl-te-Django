@@ -16,9 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.views.defaults import server_error
+from .views import vue_de_test
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('500/', server_error), # example of created a url for 500 error page
+    path('test/', vue_de_test), 
 ]
