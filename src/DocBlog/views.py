@@ -2,4 +2,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'index.html')
+    context={
+        'title': 'Welcome to DocBlog',
+        'content': 'This is the home page.'
+    }
+    return render(request, 'index.html',context=context)
